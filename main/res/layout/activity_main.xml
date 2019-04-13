@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TYPE And RUN"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_margin="10dp"
+            android:textSize="33dp"/>
+
+        <TextView
+            android:text="Make:"
+            style="@style/TextViewStyle"
+            />
+
+        <EditText
+            android:id="@+id/etMake"
+            style="@style/EditTextStyle"
+            />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Year:"
+            />
+
+        <EditText
+            android:id="@+id/etYear"
+            android:inputType="date"
+            style="@style/EditTextStyle"
+            />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Color:"
+            />
+
+        <EditText
+            android:id="@+id/etColor"
+            style="@style/EditTextStyle"
+            />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Purchase Price:"
+            />
+
+        <EditText
+            android:id="@+id/etCarPrice"
+            android:inputType="number"
+            style="@style/EditTextStyle"
+            />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Engine Size (Liter):"
+            />
+
+        <EditText
+            android:id="@+id/etEngineSize"
+            style="@style/EditTextStyle"
+            android:inputType="numberDecimal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btnCreateCar"
+                style="@style/ButtonStyle"
+                android:layout_marginRight="-10dp"
+                android:text="CREATE CAR"
+                />
+
+            <Button
+                android:id="@+id/btnCreateDiesel"
+                style="@style/ButtonStyle"
+                android:text="CREATE DIESEl"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:textSize="23dp"
+            android:background="@android:color/holo_orange_dark"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
